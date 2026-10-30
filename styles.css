@@ -108,3 +108,26 @@ dialog{background:#0b0712;color:#fff;border-color:var(--neon-cyan)}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:2;background:radial-gradient(circle at 8% 26%,#ff52de12 0,transparent 23%),radial-gradient(circle at 91% 76%,#3cf9f410 0,transparent 25%)}
 @media(max-width:800px){.thunderbird-logo{width:45px;height:45px}.hero{min-height:620px}.hero-outline{inset:12% -17% 12% 15%;opacity:.48}.hero-outline .thunderbird-logo{width:110vw}.hero-shade{background:linear-gradient(90deg,#000e,#0008),linear-gradient(0deg,#000b,transparent)}.hero-copy{padding:85px 6vw 110px}.hero h1{font-size:clamp(42px,9vw,70px)}.book-feature{flex-direction:column;align-items:flex-start}}
 @media(max-width:540px){.hero h1{font-size:clamp(37px,10vw,54px)}.hero-copy{padding-top:70px}.book-feature{padding:22px}.book-feature .button{width:100%}}
+
+
+/* 1980s LOCKER — progressive enhancement of the approved one-page storefront.
+   The original layout, collection, wishlist and reward-code preview remain intact. */
+body{background:#010104;background-image:repeating-linear-gradient(0deg,transparent 0 96px,#17112924 97px 98px),radial-gradient(ellipse at 50% 8%,#1d0737 0,transparent 45%)}
+.site-header{background:linear-gradient(#0d101b,#07070e);border-bottom:3px solid #533a72;box-shadow:inset 0 1px #777a9544,0 9px 20px #000a}
+.hero{margin:0 auto;border-left:clamp(8px,2.2vw,35px) ridge #292d3f;border-right:clamp(8px,2.2vw,35px) ridge #292d3f;border-top:12px solid #30334b;border-bottom:12px solid #27283c;background:linear-gradient(100deg,#070712 0%,#0a0920 45%,#1c0d32 100%);box-shadow:inset 0 0 0 3px #a0a2b333,inset 0 0 70px #000,0 18px 70px #000b}
+.hero:before{content:"";position:absolute;right:4%;top:24px;width:18%;height:37px;background:repeating-linear-gradient(0deg,#05050c 0 3px,#5c617b 4px 7px,#0c0d19 8px 10px);border:4px solid #24263a;transform:skewX(-12deg);opacity:.45;pointer-events:none}
+.hero:after{content:"✦  FOREVER CURIOUS  ✦  1980s DREAMERS CLUB";position:absolute;right:3.3%;bottom:20px;color:#92f9ee;font:700 9px 'Courier New',monospace;letter-spacing:2px;transform:rotate(-3deg);text-shadow:0 0 9px #4efcec;pointer-events:none}
+.hero-copy{position:relative;z-index:2}
+.hero h1{filter:drop-shadow(0 0 9px #dc40fc44)}
+.hero-sub{display:inline-block;padding:8px 13px;border:1px solid #6b42a0;background:#07040bcd;letter-spacing:3px;box-shadow:3px 3px 0 #ed5df566}
+.brand-strip{border-top:1px solid #9cb6cf33;border-bottom:2px solid #42275e;box-shadow:inset 0 6px 15px #000}
+.section-heading h2,.reward-content h2,.story h2{font-weight:900;letter-spacing:-1px}
+.collection,.how-section,.faq{background:linear-gradient(90deg,#080610,#030306 7%,#030306 93%,#080610)}
+.product-visual{border-radius:5px;border-width:2px;box-shadow:5px 7px 0 #211035,0 0 24px #ad51ff24}
+.book-feature{border:2px solid #8655d5;box-shadow:7px 7px 0 #28123a,0 0 30px #a254ee22}
+.rewards-section{border-width:3px;border-style:double;box-shadow:0 0 50px #8f38fa23,inset 0 0 30px #6a29e615}
+.story{position:relative;background:linear-gradient(135deg,#170a2b,#06070e 72%);border-top:3px solid #e65ef8}
+.story:after{content:"✦";position:absolute;right:12px;top:12px;font-size:42px;color:#f55ceb55;pointer-events:none}
+.button.primary{box-shadow:4px 4px 0 #ff54d8;letter-spacing:1.2px}
+.button.primary:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #a2ff70}
+@media(max-width:700px){.hero{border-left-width:9px;border-right-width:9px;border-top-width:8px}.hero:before{width:36%;opacity:.35}.hero:after{font-size:7px;letter-spacing:1px;right:10px}.hero-sub{font-size:14px;letter-spacing:1px}.site-header{box-shadow:none}}
