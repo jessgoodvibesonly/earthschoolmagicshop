@@ -40,3 +40,71 @@ body{background:#020204;color:#f8f7fc}
 .book-feature h3{font-size:24px;margin:8px 0}
 .book-feature p{color:#bcafc8;font-size:13px}
 @media(max-width:730px){.hero-outline{width:70%;right:-18%;opacity:.3}.hero h1{font-size:clamp(44px,12vw,65px)}.book-feature{display:block}.book-feature .button{margin-top:18px}}
+
+
+/* EARTH SCHOOL neon-foil visual layer — preserves original storefront architecture */
+:root{--neon-cyan:#3cf9f4;--neon-pink:#ff52de;--neon-lime:#b4ff4a;--neon-violet:#ad82ff;--neon-yellow:#efff73}
+html{background:#000}
+body{background:#000;color:#f8f8ff}
+.site-header,.site-footer{background:#030306;border-color:#343051}
+.site-header{position:relative;z-index:3}
+.announcement{background:#090014;color:var(--neon-cyan);border-bottom:1px solid var(--neon-pink);text-shadow:0 0 12px #3cf9f47c}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline-color:var(--neon-cyan)}
+::selection{background:var(--neon-pink);color:#000}
+.gold,.eyebrow,.nav-star,.caption-number,.heading-dot,.brand-strip>span:nth-child(even),.step-number{color:var(--neon-cyan)}
+.brand strong{color:#fff;text-shadow:0 0 12px #ff52de88}
+.brand small,.site-header nav,.section-heading>p,.product-description,.muted{color:#ccc9e7}
+.site-header nav a:hover,.text-link:hover,.product-title button:hover{color:var(--neon-pink)}
+.thunderbird-logo{width:60px;height:60px;flex-shrink:0;stroke:none;filter:drop-shadow(0 0 10px #3cf9f488) drop-shadow(0 0 13px #ff52de44)}
+.hero{min-height:620px;height:auto;background:#000;border-color:#452560;isolation:isolate}
+.hero-outline{position:absolute;inset:0 0 0 43%;display:grid;place-items:center;pointer-events:none;overflow:hidden}
+.hero-outline .thunderbird-logo{height:auto;width:min(60vw,760px);max-width:none;opacity:.88;filter:drop-shadow(0 0 25px #ff52de99) drop-shadow(0 0 38px #3cf9f455)}
+.hero-shade{background:linear-gradient(90deg,#000 0%,#000 23%,#000b 48%,#0000 85%),linear-gradient(0deg,#000a,transparent 45%);pointer-events:none}
+.hero-copy{padding-top:100px;padding-bottom:110px}
+.hero h1{font-size:clamp(46px,6.3vw,94px);font-weight:900;letter-spacing:-2px;line-height:1.05;white-space:normal;text-shadow:0 0 24px #ff52de44}
+.hero h1>span:not(.title-star){background:linear-gradient(95deg,var(--neon-cyan),var(--neon-pink),var(--neon-yellow));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 10px #ff52de44)}
+.hero-copy>.eyebrow{color:var(--neon-lime)}
+.hero-description,.hero-sub{color:#edebff}
+.small-line{background:var(--neon-pink)}
+.button.primary{background:var(--neon-cyan);color:#080313}
+.button.primary:hover{background:var(--neon-lime)}
+.button.secondary{color:var(--neon-cyan);border-color:var(--neon-cyan)}
+.button.secondary:hover{background:#0e2630}
+.text-link{border-color:var(--neon-pink)}
+.brand-strip{background:#090511;border-color:#33224c;color:#e1d9f5}
+.collection{background:#020207}
+.filter{border-color:#50416b;color:#ded9ef}
+.filter.active{background:var(--neon-pink);border-color:var(--neon-pink);color:#09000c}
+.filter:hover:not(.active){border-color:var(--neon-cyan);color:var(--neon-cyan)}
+.search{border-color:var(--neon-violet)}
+.search input{color:#fff}
+.product-visual{border:2px solid #5f397d;box-shadow:0 0 18px #b25eff24}
+.product-card:nth-child(2n) .product-visual{border-color:#087f85}
+.product-card:nth-child(3n) .product-visual{border-color:#c13ea5}
+.product-brand,.product-status button{color:var(--neon-pink)}
+.product-status,.collection-note{border-color:#443456}
+.status-dot{background:var(--neon-lime)}
+.book-feature{margin-top:46px;padding:26px 30px;border:1px solid #7452bd;background:linear-gradient(110deg,#170923,#05050b);display:flex;align-items:center;justify-content:space-between;gap:28px}
+.book-feature h3{font-size:clamp(20px,3vw,30px);font-weight:700;margin:10px 0}
+.book-feature p:not(.eyebrow){color:#d6cce2}
+.rewards-section{background:#090413;border-color:var(--neon-violet)}
+.rewards-section:before,.rewards-section:after{color:var(--neon-pink);background:#000}
+.reward-illustration .thunderbird-logo{height:90%;width:90%;filter:drop-shadow(0 0 20px #ff52de77)}
+.reward-stamp{color:var(--neon-lime)}
+.reward-intro{color:#fcf3ff}
+.code-input-row input{background:#030209;border-color:#8054a5;color:var(--neon-cyan)}
+.reward-success{background:#100721;border-color:var(--neon-lime)}
+.reward-success .success-symbol{color:var(--neon-lime)}
+.steps,.faq details,.footer-bottom{border-color:#403353}
+.story{background:#080311;color:#fff;border-top:1px solid var(--neon-pink);border-bottom:1px solid var(--neon-cyan)}
+.story-mark,.story .eyebrow,.story-quote>span{color:var(--neon-pink)}
+.story p:not(.eyebrow),.story .story-quote p,.story .story-quote p.muted,.signature{color:#e6dcf3}
+.story-quote{border-color:#715490}
+dialog{background:#0b0712;color:#fff;border-color:var(--neon-cyan)}
+.detail-meta,.wishlist-item{border-color:#624378}
+.detail-source,.field-help button,.inline-button{color:var(--neon-cyan)}
+#toast{background:var(--neon-lime);color:#080908}
+.site-footer .thunderbird-logo{width:52px;height:52px}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:2;background:radial-gradient(circle at 8% 26%,#ff52de12 0,transparent 23%),radial-gradient(circle at 91% 76%,#3cf9f410 0,transparent 25%)}
+@media(max-width:800px){.thunderbird-logo{width:45px;height:45px}.hero{min-height:620px}.hero-outline{inset:12% -17% 12% 15%;opacity:.48}.hero-outline .thunderbird-logo{width:110vw}.hero-shade{background:linear-gradient(90deg,#000e,#0008),linear-gradient(0deg,#000b,transparent)}.hero-copy{padding:85px 6vw 110px}.hero h1{font-size:clamp(42px,9vw,70px)}.book-feature{flex-direction:column;align-items:flex-start}}
+@media(max-width:540px){.hero h1{font-size:clamp(37px,10vw,54px)}.hero-copy{padding-top:70px}.book-feature{padding:22px}.book-feature .button{width:100%}}
