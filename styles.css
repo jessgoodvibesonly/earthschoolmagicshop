@@ -131,3 +131,15 @@ body{background:#010104;background-image:repeating-linear-gradient(0deg,transpar
 .button.primary{box-shadow:4px 4px 0 #ff54d8;letter-spacing:1.2px}
 .button.primary:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #a2ff70}
 @media(max-width:700px){.hero{border-left-width:9px;border-right-width:9px;border-top-width:8px}.hero:before{width:36%;opacity:.35}.hero:after{font-size:7px;letter-spacing:1px;right:10px}.hero-sub{font-size:14px;letter-spacing:1px}.site-header{box-shadow:none}}
+
+/* Temporary finished visual presentation until the owner's five image assets arrive */
+.brand .temporary-foil-mark{display:grid;place-items:center;flex-shrink:0;width:49px;height:49px;border:2px solid #74f7eb;border-radius:10px;transform:rotate(-8deg);background:#10071c;color:#fff;font-size:35px;text-shadow:0 0 14px #fc56fa;box-shadow:0 0 17px #64ffe766,inset 0 0 13px #a83bfd66}
+.hero-outline{inset:5% 1% 5% 47%;opacity:1;display:grid;place-items:center;overflow:visible}
+.locker-emblem{width:min(39vw,490px);aspect-ratio:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:15px;border:4px double #7ffbe9;border-radius:50%;transform:rotate(8deg);background:radial-gradient(circle at 50% 45%,#321453,#140b30 64%,#080717 82%);box-shadow:0 0 35px #ba61ff6b,inset 0 0 45px #9b61f962,0 0 0 10px #241433cc;font:700 clamp(10px,1.3vw,18px) 'Courier New',monospace;color:#b8ffef;letter-spacing:3px;text-align:center}
+.emblem-star{font-size:clamp(100px,20vw,280px);line-height:1;color:#fbb7ff;filter:drop-shadow(0 0 19px #ed51f8) drop-shadow(0 0 26px #47ffe6);font-family:Arial,sans-serif}
+.emblem-bottom{color:#fff49c}
+.reward-illustration .temporary-foil-mark{font-size:clamp(125px,19vw,250px);line-height:1;color:#d9beff;text-shadow:0 0 35px #ff52de,0 0 55px #3cf9f4}
+.hero-caption .caption-number{color:#b4ff4a}
+.hero:after{z-index:1}
+@media(max-width:800px){.hero-outline{inset:8% -31% 8% 32%;opacity:.35;pointer-events:none}.locker-emblem{width:370px}.emblem-star{font-size:190px}.hero-copy{z-index:3}.hero-shade{z-index:1}}
+@media(max-width:500px){.hero-outline{inset:8% -42% 8% 18%;opacity:.28}.locker-emblem{width:330px}.hero{min-height:590px}.hero-copy{padding-top:80px}}
