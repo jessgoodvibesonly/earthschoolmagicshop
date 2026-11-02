@@ -143,3 +143,25 @@ body{background:#010104;background-image:repeating-linear-gradient(0deg,transpar
 .hero:after{z-index:1}
 @media(max-width:800px){.hero-outline{inset:8% -31% 8% 32%;opacity:.35;pointer-events:none}.locker-emblem{width:370px}.emblem-star{font-size:190px}.hero-copy{z-index:3}.hero-shade{z-index:1}}
 @media(max-width:500px){.hero-outline{inset:8% -42% 8% 18%;opacity:.28}.locker-emblem{width:330px}.hero{min-height:590px}.hero-copy{padding-top:80px}}
+
+
+/* Owner-supplied holographic artwork replaces temporary star placeholders. */
+.shop-brand-art{display:block;width:62px;height:48px;object-fit:contain;flex-shrink:0;mix-blend-mode:screen}
+.hero-outline{inset:6% 1% 6% 47%;opacity:1;display:grid;place-items:center;overflow:hidden}
+.hero-thunderbird{display:block;width:100%;height:auto;max-height:100%;object-fit:contain;mix-blend-mode:screen}
+.reward-illustration{flex-direction:column;gap:18px}
+.reward-diamond{display:block;width:100%;height:auto;max-height:290px;object-fit:contain;mix-blend-mode:screen}
+.reward-stamp{position:static;display:block;text-align:center;transform:none}
+@media(max-width:800px){
+ .hero{display:flex;flex-direction:column}
+ .hero-copy{order:1;padding-bottom:32px}
+ .hero-outline{order:2;position:relative;inset:auto;width:100%;opacity:1;overflow:visible;margin:0 auto 90px;padding:0 18px}
+ .hero-thunderbird{width:min(100%,460px);max-height:none}
+ .hero-shade{display:none}
+ .hero-caption{bottom:37px;right:6vw}
+ .reward-illustration{width:240px;height:auto;max-height:none}
+ .reward-diamond{width:220px;max-height:230px}
+}
+@media(max-width:540px){.shop-brand-art{width:46px;height:38px}.site-footer .shop-brand-art{width:40px;height:32px}}
+.hero-outline{filter:none;mix-blend-mode:screen}
+.hero-shade{background:linear-gradient(90deg,#000 0%,#000a 34%,transparent 53%)}
