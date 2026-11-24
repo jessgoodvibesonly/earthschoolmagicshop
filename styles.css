@@ -165,3 +165,25 @@ body{background:#010104;background-image:repeating-linear-gradient(0deg,transpar
 @media(max-width:540px){.shop-brand-art{width:46px;height:38px}.site-footer .shop-brand-art{width:40px;height:32px}}
 .hero-outline{filter:none;mix-blend-mode:screen}
 .hero-shade{background:linear-gradient(90deg,#000 0%,#000a 34%,transparent 53%)}
+
+
+/* Confirmed community affiliate offers, separate from the collection preview. */
+.community-offers{padding-top:64px;padding-bottom:64px;background:linear-gradient(135deg,#140b25,#05070d 75%);border-bottom:1px solid #8556af}
+.community-offers .section-heading{gap:24px}
+.community-offers .section-heading h2{font-size:clamp(1.8rem,4vw,3.2rem)}
+.community-offers .eyebrow{font-size:14px}
+.community-offers .section-heading>p{font-size:16px}
+.community-offers-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.community-offer{display:flex;flex-direction:column;gap:18px;min-width:0;padding:clamp(22px,3vw,36px);border:1px solid #9862cd;border-radius:12px;background:linear-gradient(135deg,#231435,#0b1120);box-shadow:5px 5px 0 #211032}
+.community-offer h3{font-size:clamp(1.45rem,2.5vw,2rem);line-height:1.25;color:#f7d7ff}
+.community-offer>p{font-size:16px;line-height:1.7}
+.community-offer .offer-label{font-size:14px;letter-spacing:1.4px;color:#9af6e8;font-weight:700}
+.community-offer .button{font-size:14px;line-height:1.5;text-align:center;justify-content:center;letter-spacing:.3px;margin-top:auto}
+.community-offer .offer-code{display:inline-block;color:#fff3a1;font-family:'Courier New',monospace;letter-spacing:1px;overflow-wrap:anywhere}
+.community-offer .offer-terms{color:#fff3a1}
+.community-offer .offer-disclosure,.community-offers-note{font-size:14px;color:#d5c8dd;line-height:1.7}
+.community-offers-note{margin-top:24px;max-width:90ch}
+.multiverse-links{display:flex;flex-wrap:wrap;gap:16px 26px;padding:24px 0;font-size:16px;color:#a0f2e4}
+.multiverse-links a{text-decoration:underline;text-underline-offset:4px}
+.field-help a,.faq a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){.community-offers-grid{grid-template-columns:1fr}.community-offers{padding-top:42px;padding-bottom:42px}.community-offers .section-heading{display:block}.community-offers .section-heading>p{margin-top:18px}}
